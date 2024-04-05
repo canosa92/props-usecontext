@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCalculatorContext } from './CalculatorProvider';
 
 function Calculator() {
-    const { number, result, resetCalculator, sumNumber, addNumber } = useCalculatorContext();
+    const { number, sumNumber, addNumber } = useCalculatorContext();
     const [selected, setSelected] = useState(false);
 
     const handleNumberClick = (number) => {
